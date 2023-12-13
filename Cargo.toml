@@ -1,0 +1,22 @@
+[package]
+name = "actionkv-db"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+byteorder = "1.2"
+crc = "1.7"
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+serde_cbor = "0.8"
+
+[lib]
+name = "actionkv_db"
+path = "src/lib.rs"
+
+[[bin]]
+name = "akv_mem"
+path = "src/akv_mem.rs"
